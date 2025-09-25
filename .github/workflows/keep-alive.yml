@@ -16,5 +16,7 @@ jobs:
 
       - name: Create empty commit
         run: |
-          git commit --allow-empty -m "Empty commit to keep Streamlit app active"
-          git push 
+            git config --global user.email "you@example.com"
+            git config --global user.name "Your Name"
+            git commit --allow-empty -m "Empty commit to keep Streamlit app active"
+            git push 
